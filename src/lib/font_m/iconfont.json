@@ -1,0 +1,23 @@
+{
+  "id": "1558202",
+  "name": "1914",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11342538",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "5239673",
+      "name": "h",
+      "font_class": "h",
+      "unicode": "e756",
+      "unicode_decimal": 59222
+    }
+  ]
+}
