@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Document</title><link rel=stylesheet href=../sass/common.css><link rel=stylesheet href=../sass/deta.css><link rel=stylesheet href=font/iconfont.css><script src=../lib/page.js></script></head><body><header><div id=top><div class=top_nav><p class="iconfont icon-wuzi"><a href="">天猫首页</a></p><p class=left_nav><a href="">喵，欢迎来天猫</a></p><p class=left_nav_register><a href=请登录>请登录</a></p><p class=left_nav_enroll><a href=免费注册>免费注册</a></p><ul class=sn_menu><li><a href="">我的淘宝 <i class="iconfont icon-sanjiaoxing"></i></a></li><li><a href=""><i class="iconfont icon-aixin_shixin"></i>我关注的品牌</a></li><li><a href=""><i class="iconfont icon-gouwuche1"></i> 购物车</a></li><li><a href="">收藏夹 </a><i class="iconfont icon-sanjiaoxing"></i></li><li><a href="">淘宝网</a></li><li><a href="">企业购</a></li><li><a href=""><i class="iconfont icon-daohang"></i>网站导航</a><i class="iconfont icon-sanjiaoxing"></i></li></ul></div></div><div id=header_con><h1><a href=""><img src=../images/TB-26.png alt=""></a></h1><div id=shop_extra><div class=slogo><a href=""><strong>hp惠普志仕专卖店</strong></a></div><div class=shopdsr-item><div class=shopdsr-title>描 述</div><div class="shopdsr-score shopdsr-score-equal-ctrl"><span class=shopdsr-score-con>4.8</span></div></div></div><div class=search><input type=text class=search_frame placeholder="搜索 天猫 商品/品牌/店铺"> <button class=Tmall>搜天猫</button></div><button class=our_store><a href="">搜本店</a></button></div><div class=shop><div class=shop_name><a href=""><img src=../images/O1CN01U6AUdD1pztvmFWILC_!!3424475432.jpg alt=""></a></div></div></header><main id=box-content></main><script>window.addEventListener("load",function(){var f=document.getElementById("box"),i=f.children[0],n=f.children[1],d=i.children[1],l=n.children[0],t=document.getElementById("list").getElementsByTagName("li");i.addEventListener("mouseover",function(){d.style.display="block",n.style.display="block",i.addEventListener("mousemove",function(e){var t=e||window.event,o=t.pageX-f.offsetLeft-d.offsetWidth/2,s=t.pageY-f.offsetTop-d.offsetHeight/2;o<0?o=0:o>i.offsetWidth-d.offsetWidth-2&&(o=i.offsetWidth-d.offsetWidth-2),s<0?s=0:s>i.offsetHeight-d.offsetHeight-2&&(s=i.offsetHeight-d.offsetHeight-2),d.style.left=o+"px",d.style.top=s+"px",l.style.left=-o/(i.offsetWidth/n.offsetWidth)+"px",l.style.top=-s/(i.offsetHeight/n.offsetHeight)+"px"})}),i.addEventListener("mouseout",function(){d.style.display="none",n.style.display="none"});for(var e=0;e<t.length;e++)!function(e){t[e].addEventListener("mouseover",function(){i.children[0].src="../images/big"+(e+1)+".jpg",l.src="../images/a"+(e+1)+".jpg"})}(e)})</script><script>var particulars = location.search.slice(1);
+      var id = particulars.split("=")[1] * 1;
+      console.log(id);
+      var res = list.filter(function(item, index) {
+        return item.id === id;
+      })[0];
+      console.log(res);
+
+      var main = document.getElementById("box-content");
+      // let classify=document.querySelector('classify');
+      // let classify_list=document.querySelector('classify_list');
+      // let li=li.children;
+      // renderListBtn(liclassify_list);
+      main.innerHTML = `
+	  <div id="box">
+        <div id="small_box">
+          <img src="${res.big1}" />
+          <span id="mask"></span>
+        </div>
+        <div id="big_box">
+          <img src="${res.big1}" />
+        </div>
+      </div>
+      <div id="list">
+        <ul>
+          <li><img src="${res.small1}" /></li>
+          <li><img src="${res.small2}" /></li>
+          <li><img src="${res.small3}" /></li>
+          <li><img src="${res.small4}" /></li>
+          <li><img src="${res.small5}" /></li>
+        </ul>
+      </div>
+      <div id="tb-wrap">
+        <h1 data-spm="1000983">
+          <a href="">${res.text}</a
+          >
+        </h1>
+        <p class="newp">
+         
+        </p>
+
+        <div class="price">
+          <dt class="tb-metatit">价格</dt>
+          <dd>
+            <em class="tm-yen">¥</em> <span class="tm-price">${res.price}</span>
+            <div class="staticPromoTip"></div>
+          </dd>
+        </div>
+        <ul class="tm-ind-panel">
+          <li
+            class="tm-ind-item tm-ind-sellCount "
+            data-label="月销量"
+            style="display: none;"
+          ></li>
+          <li
+            class="tm-ind-item tm-ind-reviewCount canClick tm-line3"
+            id="J_ItemRates"
+          >
+            <div class="tm-indcon">
+              <span class="tm-label">累计评价</span>
+              <span class="tm-count">160</span>
+            </div>
+          </li>
+          <li class="tm-ind-item tm-ind-emPointCount" data-spm="1000988">
+            <div class="tm-indcon">
+              <a href="" target="_blank">
+                <span class="tm-label">送天猫积分</span>
+                <span class="tm-count">149</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="classify">
+          <p class="classify_yanse">颜色分类</p>
+          <ul class="classify_list">
+            <li><img src="${res.small1}" /></li>
+            <li><img src="${res.small2}" /></li>
+            <li><img src="${res.small3}" /></li>
+            <li><img src="${res.small4}" /></li>
+            <li><img src="${res.small5}" /></li>
+          </ul>
+          <p class="meal">套餐类型</p>
+          <ul class="classify_lists">
+            <li>
+              <a href="#" role="button" tabindex="0">
+                <span>套餐一</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <table class="shuliang">
+          <tbody class="shopS">
+            <td class="Son2">
+              <p class="quantity">数量</p>
+              <span class="reduce">-</span>
+              <input type="text" value="1" class="count" />
+              <span class="add">+</span>
+            </td>
+          </tbody>
+        </table>
+		<div class="carbox">
+			<div class="left"><span>加入购物车</span></div>
+			<div class="con">
+				<!--<dl>
+					<dt><img src="${res.img}" width="60" height="60" alt="美女" /></dt>
+					<dd class="ti">${res.text}</dd>
+					<dd class="money">￥${res.price}</dd>
+					</dl>-->
+			</div>
+		</div>
+      </div>`;</script><script>var tbody=document.querySelector(".shopS");tbody.onclick=function(e){var n=e.target;if("+"==n.innerHTML){n.previousElementSibling.value=1*n.previousElementSibling.value+1;var t=1*n.parentNode.nextElementSibling.firstElementChild.innerText.split(" ")[0],i=1*n.parentNode.nextElementSibling.lastElementChild.innerText.split(" ")[0],l=1*n.parentNode.nextElementSibling.nextElementSibling.firstElementChild.innerText.split(" ")[0],r=1*n.parentNode.nextElementSibling.nextElementSibling.lastElementChild.innerText.split(" ")[2];l=n.previousElementSibling.value*t,n.parentNode.nextElementSibling.nextElementSibling.firstElementChild.innerHTML=l.toFixed(2),r=l-n.previousElementSibling.value*i,n.parentNode.nextElementSibling.nextElementSibling.lastElementChild.innerHTML=r.toFixed(2)}"-"==n.innerHTML&&1<n.nextElementSibling.value&&(n.nextElementSibling.value=1*n.nextElementSibling.value-1)}</script><script></script><script>var k=0;function play(t){var i=t.clientX,n=t.clientY,a=$(".carbox .left span").offset().left,s=$(".carbox .left span").offset().top,l=$(t.target).parent().siblings("img").attr("src"),e=$("<img src='"+l+"' width='50' style='border-radius:50%'/>");e.fly({start:{left:i,top:n},end:{left:a,top:s},onEnd:function(){e.fadeOut("slow",function(){$(this).remove()})}})}$(".carbox .left span").click(function(){0==k?($(".carbox").animate({right:"0px"},500),k=1):1==k&&($(".carbox").animate({right:"-220px"},500),k=0)}),$(".par_list ul li p.jg span").click(function(){var t=$(this).parent().siblings("img").attr("src"),i=$(this).parent().siblings("p.title").html(),n=$(this).siblings("font").html();$(".con").append("<dl><dt><img src='"+t+"' width='60' height='60' alt='美女' /></dt><dd class='ti'>"+i+"</dd><dd class='money'>"+n+"</dd></dl>"),play(event)})</script></body></html>

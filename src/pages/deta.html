@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../sass/common.css" />
+    <link rel="stylesheet" href="../sass/deta.css" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <!-- <script src="js/page.js"></script> -->
+    <script src="../lib/page.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="top">
+        <div class="top_nav">
+          <p class="iconfont icon-wuzi"><a href="">天猫首页</a></p>
+          <p class="left_nav"><a href="">喵，欢迎来天猫</a></p>
+          <p class="left_nav_register"><a href="请登录">请登录</a></p>
+          <p class="left_nav_enroll"><a href="免费注册">免费注册</a></p>
+          <ul class="sn_menu">
+            <li>
+              <a href="">我的淘宝 <i class="iconfont icon-sanjiaoxing"></i> </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="iconfont icon-aixin_shixin"></i>我关注的品牌
+              </a>
+            </li>
+            <li>
+              <a href=""> <i class="iconfont icon-gouwuche1"></i> 购物车</a>
+            </li>
+            <li>
+              <a href="">收藏夹 </a> <i class="iconfont icon-sanjiaoxing"></i>
+            </li>
+            <li><a href="">淘宝网</a></li>
+            <li><a href="">企业购</a></li>
+            <li>
+              <a href=""> <i class="iconfont icon-daohang"></i>网站导航</a
+              ><i class="iconfont icon-sanjiaoxing"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="header_con">
+        <h1>
+          <a href=""><img src="../images/TB-26.png" alt=""/></a>
+        </h1>
+        <div id="shop_extra">
+          <div class="slogo">
+            <a href=""><strong>hp惠普志仕专卖店</strong></a>
+          </div>
+          <div class="shopdsr-item">
+            <div class="shopdsr-title">
+              描 述
+            </div>
+            <div class="shopdsr-score shopdsr-score-equal-ctrl">
+              <span class="shopdsr-score-con">4.8</span>
+            </div>
+          </div>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            class="search_frame"
+            placeholder="搜索 天猫 商品/品牌/店铺"
+          />
+          <button class="Tmall">搜天猫</button>
+        </div>
+        <button class="our_store"><a href="">搜本店</a></button>
+      </div>
+      <div class="shop">
+        <div class="shop_name">
+          <a href=""
+            ><img
+              src="../images/O1CN01U6AUdD1pztvmFWILC_!!3424475432.jpg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main id="box-content">
+      <!-- 
+			 <div id="box">
+				 <div id="small_box">
+          <img src="../images/big1.jpg" />
+          <span id="mask"></span>
+        </div>
+        <div id="big_box">
+          <img src="../images/big1.jpg" />
+        </div>
+      </div>
+      <div id="list">
+        <ul>
+          <li><img src="../images/small1.jpg" /></li>
+          <li><img src="../images/small2.jpg" /></li>
+          <li><img src="../images/small3.jpg" /></li>
+          <li><img src="../images/small4.jpg" /></li>
+          <li><img src="../images/small5.jpg" /></li>
+        </ul>
+      </div>
+      <div id="tb-wrap">
+        <h1 data-spm="1000983">
+          <a href=""
+            >HP/惠普H200电脑耳机头戴式电竞游戏7.1声道吃鸡有线耳麦带麦克风</a
+          >
+        </h1>
+        <p class="newp">
+          惠普品质 震撼重低音 吃鸡听声辩位
+        </p>
+
+        <div class="price">
+          <dt class="tb-metatit">价格</dt>
+          <dd>
+            <em class="tm-yen">¥</em> <span class="tm-price">299.00</span>
+            <div class="staticPromoTip"></div>
+          </dd>
+        </div>
+        <ul class="tm-ind-panel">
+          <li
+            class="tm-ind-item tm-ind-sellCount "
+            data-label="月销量"
+            style="display: none;"
+          ></li>
+          <li
+            class="tm-ind-item tm-ind-reviewCount canClick tm-line3"
+            id="J_ItemRates"
+          >
+            <div class="tm-indcon">
+              <span class="tm-label">累计评价</span>
+              <span class="tm-count">160</span>
+            </div>
+          </li>
+          <li class="tm-ind-item tm-ind-emPointCount" data-spm="1000988">
+            <div class="tm-indcon">
+              <a href="" target="_blank">
+                <span class="tm-label">送天猫积分</span>
+                <span class="tm-count">149</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="classify">
+          <p class="classify_yanse">颜色分类</p>
+          <ul class="classify_list">
+            <li><img src="images/small1.jpg" /></li>
+            <li><img src="images/small2.jpg" /></li>
+            <li><img src="images/small3.jpg" /></li>
+            <li><img src="images/small4.jpg" /></li>
+            <li><img src="images/small5.jpg" /></li>
+          </ul>
+          <p class="meal">套餐类型</p>
+          <ul class="classify_lists">
+            <li>
+              <a href="#" role="button" tabindex="0">
+                <span>套餐一</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <table class="shuliang">
+          <tbody class="shopS">
+            <td class="Son2">
+              <p class="quantity">数量</p>
+              <span class="reduce">-</span>
+              <input type="text" value="1" class="count" />
+              <span class="add">+</span>
+            </td>
+          </tbody>
+        </table>
+        <div class="btn">
+          <button class="btn_goumai"><a href="">立即购买</a></button>
+          <button class="btn_gouwuche"><a href="">购物车</a></button>
+        </div>
+      </div> -->
+    </main>
+    <!-- 放大镜 -->
+    <script>
+      window.addEventListener("load", function() {
+        var box = document.getElementById("box");
+        var s_box = box.children[0];
+        var b_box = box.children[1];
+        var mask = s_box.children[1];
+        var b_img = b_box.children[0];
+        var list_lis = document
+          .getElementById("list")
+          .getElementsByTagName("li");
+
+        //监听鼠标进入小盒子
+        s_box.addEventListener("mouseover", function() {
+          //显示隐藏的内容
+          mask.style.display = "block";
+          b_box.style.display = "block";
+
+          //监听鼠标的移动
+          s_box.addEventListener("mousemove", function(ev) {
+            var e = ev || window.event;
+            //定位鼠标的位置
+            var pointX = e.pageX - box.offsetLeft - mask.offsetWidth / 2;
+            var pointY = e.pageY - box.offsetTop - mask.offsetHeight / 2;
+
+            //边界检测
+            if (pointX < 0) {
+              pointX = 0;
+            } else if (pointX > s_box.offsetWidth - mask.offsetWidth - 2) {
+              pointX = s_box.offsetWidth - mask.offsetWidth - 2;
+            }
+
+            if (pointY < 0) {
+              pointY = 0;
+            } else if (pointY > s_box.offsetHeight - mask.offsetHeight - 2) {
+              pointY = s_box.offsetHeight - mask.offsetHeight - 2;
+            }
+
+            //发大镜动起来
+            mask.style.left = pointX + "px";
+            mask.style.top = pointY + "px";
+
+            //大盒子图片动起来
+            /*
+             * 小盒子x/大盒子x=小盒子.width/大盒子.width
+             * 大盒子x = 小盒子x /(小盒子.width/大盒子.width)
+             * */
+
+            b_img.style.left =
+              -pointX / (s_box.offsetWidth / b_box.offsetWidth) + "px";
+            b_img.style.top =
+              -pointY / (s_box.offsetHeight / b_box.offsetHeight) + "px";
+          });
+        });
+
+        //监听鼠标离开小盒子
+        s_box.addEventListener("mouseout", function() {
+          //隐藏显示的内容
+          mask.style.display = "none";
+          b_box.style.display = "none";
+        });
+
+        //换图片
+        for (var i = 0; i < list_lis.length; i++) {
+          (function(i) {
+            var li = list_lis[i];
+            li.addEventListener("mouseover", function() {
+              s_box.children[0].src = "../images/big" + (i + 1) + ".jpg";
+              b_img.src = "../images/a" + (i + 1) + ".jpg";
+            });
+          })(i);
+        }
+      });
+    </script>
+    <!-- <div class="classify">
+	<p class="classify_yanse">颜色分类</p>
+	<ul class="classify_list">
+		<li><img src="images/small1.jpg"></li>
+		<li><img src="images/small2.jpg"></li>
+		<li><img src="images/small3.jpg"></li>
+		<li><img src="images/small4.jpg"></li>
+		<li><img src="images/small5.jpg"></li>
+	</ul> -->
+    <!-- 渲染 -->
+    <script>
+      var particulars = location.search.slice(1);
+      var id = particulars.split("=")[1] * 1;
+      console.log(id);
+      var res = list.filter(function(item, index) {
+        return item.id === id;
+      })[0];
+      console.log(res);
+
+      var main = document.getElementById("box-content");
+      // let classify=document.querySelector('classify');
+      // let classify_list=document.querySelector('classify_list');
+      // let li=li.children;
+      // renderListBtn(liclassify_list);
+      main.innerHTML = `
+	  <div id="box">
+        <div id="small_box">
+          <img src="${res.big1}" />
+          <span id="mask"></span>
+        </div>
+        <div id="big_box">
+          <img src="${res.big1}" />
+        </div>
+      </div>
+      <div id="list">
+        <ul>
+          <li><img src="${res.small1}" /></li>
+          <li><img src="${res.small2}" /></li>
+          <li><img src="${res.small3}" /></li>
+          <li><img src="${res.small4}" /></li>
+          <li><img src="${res.small5}" /></li>
+        </ul>
+      </div>
+      <div id="tb-wrap">
+        <h1 data-spm="1000983">
+          <a href="">${res.text}</a
+          >
+        </h1>
+        <p class="newp">
+         
+        </p>
+
+        <div class="price">
+          <dt class="tb-metatit">价格</dt>
+          <dd>
+            <em class="tm-yen">¥</em> <span class="tm-price">${res.price}</span>
+            <div class="staticPromoTip"></div>
+          </dd>
+        </div>
+        <ul class="tm-ind-panel">
+          <li
+            class="tm-ind-item tm-ind-sellCount "
+            data-label="月销量"
+            style="display: none;"
+          ></li>
+          <li
+            class="tm-ind-item tm-ind-reviewCount canClick tm-line3"
+            id="J_ItemRates"
+          >
+            <div class="tm-indcon">
+              <span class="tm-label">累计评价</span>
+              <span class="tm-count">160</span>
+            </div>
+          </li>
+          <li class="tm-ind-item tm-ind-emPointCount" data-spm="1000988">
+            <div class="tm-indcon">
+              <a href="" target="_blank">
+                <span class="tm-label">送天猫积分</span>
+                <span class="tm-count">149</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="classify">
+          <p class="classify_yanse">颜色分类</p>
+          <ul class="classify_list">
+            <li><img src="${res.small1}" /></li>
+            <li><img src="${res.small2}" /></li>
+            <li><img src="${res.small3}" /></li>
+            <li><img src="${res.small4}" /></li>
+            <li><img src="${res.small5}" /></li>
+          </ul>
+          <p class="meal">套餐类型</p>
+          <ul class="classify_lists">
+            <li>
+              <a href="#" role="button" tabindex="0">
+                <span>套餐一</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <table class="shuliang">
+          <tbody class="shopS">
+            <td class="Son2">
+              <p class="quantity">数量</p>
+              <span class="reduce">-</span>
+              <input type="text" value="1" class="count" />
+              <span class="add">+</span>
+            </td>
+          </tbody>
+        </table>
+		<div class="carbox">
+			<div class="left"><span>加入购物车</span></div>
+			<div class="con">
+				<!--<dl>
+					<dt><img src="${res.img}" width="60" height="60" alt="美女" /></dt>
+					<dd class="ti">${res.text}</dd>
+					<dd class="money">￥${res.price}</dd>
+					</dl>-->
+			</div>
+		</div>
+      </div>`;
+    </script>
+    <!-- 数量加减 -->
+    <script>
+      var tbody = document.querySelector(".shopS");
+      tbody.onclick = function(e) {
+        var event = e.target;
+
+        if (event.innerHTML == "+") {
+          event.previousElementSibling.value =
+            event.previousElementSibling.value * 1 + 1;
+          var num1 =
+            event.parentNode.nextElementSibling.firstElementChild.innerText.split(
+              " "
+            )[0] * 1;
+          var num2 =
+            event.parentNode.nextElementSibling.lastElementChild.innerText.split(
+              " "
+            )[0] * 1;
+
+          var num3 =
+            event.parentNode.nextElementSibling.nextElementSibling.firstElementChild.innerText.split(
+              " "
+            )[0] * 1;
+          var num4 =
+            event.parentNode.nextElementSibling.nextElementSibling.lastElementChild.innerText.split(
+              " "
+            )[2] * 1;
+          num3 = event.previousElementSibling.value * num1;
+          event.parentNode.nextElementSibling.nextElementSibling.firstElementChild.innerHTML = num3.toFixed(
+            2
+          );
+          num4 = num3 - event.previousElementSibling.value * num2;
+          event.parentNode.nextElementSibling.nextElementSibling.lastElementChild.innerHTML = num4.toFixed(
+            2
+          );
+        }
+        if (event.innerHTML == "-") {
+          if (event.nextElementSibling.value > 1) {
+            event.nextElementSibling.value =
+              event.nextElementSibling.value * 1 - 1;
+          }
+        }
+      };
+    </script>
+    <script></script>
+
+    <script>
+      var k = 0;
+      $(".carbox .left span").click(function() {
+        if (k == 0) {
+          $(".carbox").animate({ right: "0px" }, 500);
+          k = 1;
+        } else if (k == 1) {
+          $(".carbox").animate({ right: "-220px" }, 500);
+          k = 0;
+        }
+      });
+      $(".par_list ul li p.jg span").click(function() {
+        var img = $(this)
+          .parent()
+          .siblings("img")
+          .attr("src");
+        var text = $(this)
+          .parent()
+          .siblings("p.title")
+          .html();
+        var money = $(this)
+          .siblings("font")
+          .html();
+        $(".con").append(
+          "<dl><dt><img src='" +
+            img +
+            "' width='60' height='60' alt='美女' /></dt><dd class='ti'>" +
+            text +
+            "</dd><dd class='money'>" +
+            money +
+            "</dd></dl>"
+        );
+        play(event);
+      });
+      //抛物线函数
+      function play(event) {
+        var s_left = event.clientX; //获取鼠标左边的位置
+        var s_top = event.clientY; //获取鼠标左边的位置
+        var e_left = $(".carbox .left span").offset().left;
+        var e_top = $(".carbox .left span").offset().top;
+        var _this = $(event.target); //当前到点击的js对象
+        var img = _this
+          .parent()
+          .siblings("img")
+          .attr("src");
+        var flyer = $(
+          "<img src='" + img + "' width='50' style='border-radius:50%'/>"
+        ); //创建图片对象
+
+        flyer.fly({
+          start: {
+            left: s_left,
+            top: s_top
+          },
+          end: {
+            left: e_left,
+            top: e_top
+          },
+          onEnd: function() {
+            flyer.fadeOut("slow", function() {
+              $(this).remove();
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
